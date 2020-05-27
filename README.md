@@ -10,6 +10,7 @@
 	1. SMS
 	2. WhatsApp
 	3. iMessage Group Chats
+	4. Movie Scripts API
 
 ### Avaliable Scripts:
 	1. k3g

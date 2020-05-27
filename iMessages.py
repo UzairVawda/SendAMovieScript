@@ -1,7 +1,7 @@
 import os
 
-number = input("Enter Phone Number:\n>")
-file = str(input("File Name:\n>"))
+number = input("Enter Recipents Phone Number:\n(Do Not include dashes or parenthesies. Just the 10 digit number):\n> ")
+file = str(input("File Name:\n> "))
 
 with open(file, 'r') as script:
 	lines = script.readlines()

@@ -9,6 +9,7 @@
 ### Services On The Way:
 	1. SMS
 	2. WhatsApp
+	3. iMessage Group Chats
 
 ### Avaliable Scripts:
 	1. k3g

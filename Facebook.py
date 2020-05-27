@@ -32,7 +32,6 @@ with open(file, 'r') as script:
 		try:
 			client.send(Message(text=line), thread_id=thread_id, thread_type=thread_type)
 			time.sleep(messageDelay)
-			print('Sending %s' %(line))
 		except:
 			print("Sorry, we've reached Facebook's spam limit.")
 

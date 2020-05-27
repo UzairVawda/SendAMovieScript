@@ -9,11 +9,12 @@
 ### Services On The Way:
 	1. SMS
 	2. WhatsApp
+	3. iMessage Group Chats
 
 ### Avaliable Scripts:
 	1. k3g
 	2. bees
-	3. You can find virtually all movie scripts online. Download them as a TXT.
+	3. You can find virtually all movie scripts online. Download them as a TXT. 
 
 ### Using iMessage
 1. Download or clone the repo 

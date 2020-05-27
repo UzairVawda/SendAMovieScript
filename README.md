@@ -28,5 +28,12 @@
 4. `python Facebook.py` 
 5. Follow the prompts
 
+### FbChat - Getting someones username
+1. Search your friends name 
+2. Open the JavaScript Console
+3. Search for profile_id 
+4. Username is whatever comes after the equal sign 
+5. To verify, go to facebook.com/'USERNAME'
+
 Warning: 
 I am not responsible if your account gets banned for spammy activities, such as sending lots of messages to people you don’t know, sending messages very quickly, sending spammy looking URLs, logging in and out very quickly. Be responsible!

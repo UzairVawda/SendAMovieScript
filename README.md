@@ -36,6 +36,16 @@
 3. Search for profile_id 
 4. Username is whatever comes after the equal sign 
 5. To verify, go to facebook.com/'USERNAME'
+EDIT: You can also in most cases simply type in there full name.
+
+### WhatsApp
+1. `pip install selenium`
+2. Download or clone the repo 
+3. `cd SendAMovieScript`
+4. `python Facebook.py`
+5. Open Whatsapp on your app and click on the gear icon. Select 'Whatsapp Web/Desktop'
+6. Select scan QR Code and scan the qr code that pops up. 
+7. Follow the prompts
 
 Warning: 
 I am not responsible if your account gets banned for spammy activities, such as sending lots of messages to people you don’t know, sending messages very quickly, sending spammy looking URLs, logging in and out very quickly. Be responsible!

@@ -5,12 +5,12 @@
 ### Current Avaliable Services:
 	1. iMessage
 	2. Facebook Messenger
+	3. WhatsApp
 
 ### Services On The Way:
 	1. SMS
-	2. WhatsApp
-	3. iMessage Group Chats
-	4. Movie Scripts API
+	2. iMessage Group Chats
+	3. Movie Scripts API
 
 ### Avaliable Scripts:
 	1. k3g

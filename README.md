@@ -3,19 +3,20 @@
 ## Want to send you friend an entire movie script? Well, now you can!
 
 ### Current Avaliable Services:
-	1. iMessage
-	2. Facebook Messenger
-	3. WhatsApp
+1. iMessage
+2. Facebook Messenger
+3. WhatsApp
 
 ### Services On The Way:
-	1. SMS
-	2. iMessage Group Chats
-	3. Movie Scripts API
+1. SMS
+2. iMessage Group Chats
+3. Movie Scripts API
+4. Music Lyrics API
 
 ### Avaliable Scripts:
-	1. k3g
-	2. bees
-	3. You can find virtually all movie scripts online. Download them as a TXT.
+1. k3g
+2. bees
+3. You can find virtually all movie scripts online. Download them as a TXT.
 
 ### Using iMessage
 1. Download or clone the repo 

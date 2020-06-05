@@ -1,4 +1,7 @@
+# import sys to exit, import lyricsgenius for song lyrics, import time for delay
+# import webdriver to get chrome and import WebDriverWait for time delay while opening
 import sys
+import lyricsgenius
 import time 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait 
@@ -7,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # Select help > About Google Chrome
 # https://chromedriver.chromium.org/ Download the appropriate version and replace the path
 # driver = webdriver.Chrome("YOUR GOOGLE CHROME DRIVER PATH")
-
+genius = lyricsgenius.Genius("hsirmoWcQW6Xize7OXuF2WjUZcQqHCpwgksh7uLm-xUL_b5hd3oJ33wOq0SmIX3M")
 driver = webdriver.Chrome("/Users/UzairVawda/Sites/ScriptSending/driver/chromedriver")
 
 # Load whatsapp in the chrome beowser and wait 
@@ -27,21 +30,25 @@ user.click()
 # Select the message box 
 messageBox = driver.find_element_by_class_name('_1Plpp')
 
-# Select file from user and wait time between messages 
-file = input('Name of script file:\n> ')
-messageDelay = float(input('Delay between each message: '))
+# Select song to send and wait time between messages
+specificSong = str(input("What song would you like to search for?\n> ")) 
+messageDelay = int(input('Delay between each messages in seconds: '))
 
-# Open file as script and for each line fiter the "'" and send them one by one 
-# I had to filt the "'" becasue they were causing the script to quit or crash 
-with open(file, 'r') as script:
-	lines = script.readlines()
-	for line in lines:
-		line = line.replace("'", "")
-		try:
-			messageBox.send_keys(line)
-			driver.find_element_by_class_name('_35EW6').click()
-			time.sleep(messageDelay)
-		except:
-			print("Sorry, something went wrong.")
+song = genius.search_song(specificSong)
 
-script.close()
+if (song == None):
+	print ("Could not find", specificSong)
+	sys.exit()
+
+songLyrics = song.lyrics
+songLyrics = songLyrics.split("\n")
+
+print ("Sending lyrics to " + userChoice + "...")
+
+# send song line by line
+for line in songLyrics:
+	messageBox.send_keys(line)
+	driver.find_element_by_class_name('_35EW6').click()
+	time.sleep(messageDelay)
+
+print ("Done sending lyrics!")
